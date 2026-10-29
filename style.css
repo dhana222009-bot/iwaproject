@@ -1,0 +1,396 @@
+```css
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #202b3c;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+
+header {
+    background-color: #ffffff;
+    padding: 18px 7%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar h2 {
+    color: #16a085;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #202b3c;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #16a085;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: #16a085;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #117864;
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background-color: #596579;
+}
+
+/* Home Section */
+
+.hero {
+    min-height: 520px;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    background: linear-gradient(120deg, #e0f8ef, #edf0ff);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #16a085;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #596579;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 240px;
+}
+
+/* Fitness Watch Illustration */
+
+.watch {
+    width: 220px;
+    height: 300px;
+    padding: 15px;
+    background: #252b3b;
+    border-radius: 45px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+}
+
+.watch-screen {
+    height: 100%;
+    border-radius: 32px;
+    background: #101827;
+    color: white;
+    text-align: center;
+    padding: 22px 10px;
+}
+
+.watch-screen h3 {
+    color: #57e3b2;
+    margin-bottom: 20px;
+}
+
+.watch-screen h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.watch-screen p {
+    margin: 15px 0;
+}
+
+/* Watch Animation */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Features Section */
+
+.features,
+.dashboard,
+.coach {
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.features h2,
+.dashboard h2,
+.coach h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.feature-card {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: #16a085;
+}
+
+.feature-card p {
+    color: #596579;
+}
+
+/* Dashboard */
+
+.dashboard {
+    background-color: #edf8f4;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card h3 {
+    font-size: 18px;
+}
+
+.dashboard-card p {
+    color: #16a085;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.dashboard-card span {
+    color: #68738a;
+    font-size: 14px;
+}
+
+/* Step Goal Progress */
+
+.goal-box {
+    background: white;
+    max-width: 600px;
+    padding: 30px;
+    margin: 35px auto 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.progress-background {
+    width: 100%;
+    height: 15px;
+    background: #dce5e2;
+    border-radius: 20px;
+    margin: 18px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 56.25%;
+    height: 100%;
+    background: #16a085;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+/* Personalized Coach */
+
+.coach {
+    background: linear-gradient(120deg, #edf0ff, #e1f8ef);
+}
+
+.coach > p {
+    color: #596579;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+
+.coach-box {
+    max-width: 550px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.coach-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.coach-box select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccd5df;
+    border-radius: 8px;
+    background: white;
+    font-size: 16px;
+}
+
+.coach-result {
+    margin-top: 22px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #e5f8f0;
+    color: #17634f;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background: #202b3c;
+    color: white;
+    padding: 35px 7%;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer small {
+    display: block;
+    margin-top: 15px;
+    color: #c4ccda;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .feature-container,
+    .dashboard-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .feature-container,
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features h2,
+    .dashboard h2,
+    .coach h2 {
+        font-size: 28px;
+    }
+
+    .goal-box,
+    .coach-box {
+        padding: 22px;
+    }
+}
+```
