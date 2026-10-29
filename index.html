@@ -1,0 +1,196 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PulseFit - Fitness Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2>💚 PulseFit</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#coach">Personal Coach</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <h1>Your Fitness,<br>
+                <span>Your Future!</span>
+            </h1>
+
+            <p>
+                Track your daily activities, monitor your fitness,
+                and receive personalized coaching to build healthier habits.
+            </p>
+
+            <a href="#dashboard" class="btn">Explore Dashboard</a>
+        </div>
+
+        <div class="hero-image">
+            <div class="watch">
+                <div class="watch-screen">
+                    <h3>PulseFit</h3>
+                    <p>❤️ Heart Rate</p>
+                    <h1>72 BPM</h1>
+                    <p>👣 Steps: 7,842</p>
+                    <p>🌙 Sleep: 8 Hours</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+
+        <h2>Our Features</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="icon">👣</div>
+                <h3>Activity Tracking</h3>
+                <p>Track steps and daily movement.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">❤️</div>
+                <h3>Heart Rate</h3>
+                <p>View your sample heart-rate readings.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🌙</div>
+                <h3>Sleep Tracking</h3>
+                <p>Understand your sleep habits.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🎯</div>
+                <h3>Fitness Goals</h3>
+                <p>Set goals and monitor your progress.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard" id="dashboard">
+
+        <h2>Your Fitness Dashboard</h2>
+
+        <div class="dashboard-container">
+
+            <div class="dashboard-card">
+                <h3>👣 Daily Steps</h3>
+                <p id="steps">4500</p>
+                <span>Steps walked</span>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>❤️ Heart Rate</h3>
+                <p>72 BPM</p>
+                <span>Sample reading</span>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>🔥 Active Calories</h3>
+                <p>320 kcal</p>
+                <span>Illustrative value</span>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>🌙 Sleep</h3>
+                <p>8 Hours</p>
+                <span>Sample sleep duration</span>
+            </div>
+
+        </div>
+
+        <div class="goal-box">
+            <h3>Daily Step Goal</h3>
+
+            <div class="progress-background">
+                <div class="progress-bar" id="progress"></div>
+            </div>
+
+            <p id="goalText">4500 / 8000 steps</p>
+
+            <button class="btn" onclick="addSteps()">
+                Add 500 Steps
+            </button>
+
+            <button class="btn reset-btn" onclick="resetSteps()">
+                Reset Steps
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Personalized Coaching Section -->
+    <section class="coach" id="coach">
+
+        <h2>Personalized Fitness Coach</h2>
+
+        <p>
+            Select your fitness goal to receive a personalized suggestion.
+        </p>
+
+        <div class="coach-box">
+
+            <label for="fitnessGoal">Choose Your Goal:</label>
+
+            <select id="fitnessGoal">
+                <option value="weight">Improve Daily Activity</option>
+                <option value="strength">Build Stamina</option>
+                <option value="sleep">Improve Sleep</option>
+                <option value="health">Balance Activity and Rest</option>
+            </select>
+
+            <button class="btn" onclick="getCoaching()">
+                Get My Coaching Tip
+            </button>
+
+            <div class="coach-result" id="coachResult">
+                Your personalized coaching tip will appear here.
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>💚 PulseFit</h3>
+
+        <p>Wearable Fitness Tracker with Personalized Coaching</p>
+
+        <p>College Project | HTML, CSS and JavaScript</p>
+
+        <small>
+            This is a demonstration website. It does not measure real health data.
+        </small>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
